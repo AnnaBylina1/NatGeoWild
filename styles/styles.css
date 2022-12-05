@@ -60,6 +60,13 @@ img {
    text-decoration: none;
    font-size: 25px;
    font-weight: 500; 
+   transition: color 0 15s easy-n;
+}
+
+.navigation_link:hover,
+.navigation_link:focus {
+    color: #406343;
+
 }
 
 .navigation_link--current {
@@ -98,6 +105,12 @@ img {
 
 .controls_button svg {
     fill: #ffffff;
+    transition: color 0 15s easy-n;
+}
+
+.controls_button svg:hover,
+.controls_button svg:focus  {
+    fill: #514063;
 }
 
 /*PROMO*/
@@ -116,6 +129,11 @@ img {
     position: absolute;
     top: 333px;
     left: 312px;
+    transition: transform 0.3s easy-in;
+}
+
+.promo_text-lion {
+    transform: scale(0.95);
 }
 
 .promo_text {
@@ -146,13 +164,36 @@ img {
     bottom: 164px;
     left: 50%;
     margin-left: -190px;
+    
 }
 
+
 .promo_scroll {
-   
-    background-image: url("images\bx_mouse.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
     width: 69px;
     height: 69px;
-}
+    background-image: url("images/bx_mouse.svg");
+    background-color: #3f6142;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+ /* BUTTON */
+  .button {
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 700;
+    border: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    padding: 22px 47px 20px;
+    background-color: #406343;
+    box-shadow: -25px 0 50px rgba(0, 0, 0, 0.1), 25px -25px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+   }
+  
+  .button svg {
+    fill: #ffffff;
+  }  
