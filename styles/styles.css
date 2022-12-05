@@ -60,13 +60,12 @@ img {
    text-decoration: none;
    font-size: 25px;
    font-weight: 500; 
-   transition: color 0 15s easy-n;
+   transition: color 0 15s easy-in;
 }
 
 .navigation_link:hover,
 .navigation_link:focus {
     color: #406343;
-
 }
 
 .navigation_link--current {
@@ -86,6 +85,9 @@ img {
 .controls {
     display: flex;
     gap: 0 35px;
+}
+
+.controls { 
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -105,12 +107,16 @@ img {
 
 .controls_button svg {
     fill: #ffffff;
-    transition: color 0 15s easy-n;
 }
 
-.controls_button svg:hover,
-.controls_button svg:focus  {
-    fill: #514063;
+.controls_button svg {
+    fill: #ffffff;
+    transition: fill 0.15s ease-in;
+}
+
+.controls__button:hover svg,
+.controls__button:focus svg {
+  fill: #406343;
 }
 
 /*PROMO*/
@@ -129,7 +135,7 @@ img {
     position: absolute;
     top: 333px;
     left: 312px;
-    transition: transform 0.3s easy-in;
+    transition: transform 0.3s ease-in;
 }
 
 .promo_text-lion {
