@@ -60,6 +60,13 @@ img {
    text-decoration: none;
    font-size: 25px;
    font-weight: 500; 
+   transition: color 0 15s easy-n;
+}
+
+.navigation_link:hover,
+.navigation_link:focus {
+    color: #406343;
+
 }
 
 .navigation_link--current {
@@ -98,6 +105,12 @@ img {
 
 .controls_button svg {
     fill: #ffffff;
+    transition: color 0 15s easy-n;
+}
+
+.controls_button svg:hover,
+.controls_button svg:focus  {
+    fill: #514063;
 }
 
 /*PROMO*/
@@ -116,6 +129,11 @@ img {
     position: absolute;
     top: 333px;
     left: 312px;
+    transition: transform 0.3s easy-in;
+}
+
+.promo_text-lion {
+    transform: scale(0.95);
 }
 
 .promo_text {
@@ -146,6 +164,7 @@ img {
     bottom: 164px;
     left: 50%;
     margin-left: -190px;
+    
 }
 
 
@@ -153,7 +172,7 @@ img {
     width: 69px;
     height: 69px;
     background-image: url("images/bx_mouse.svg");
-    
+    background-color: #3f6142;
     background-repeat: no-repeat;
     background-position: center center;
   }
