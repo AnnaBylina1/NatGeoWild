@@ -67,10 +67,30 @@ img {
 }
 
 .navigation_link--current::before {
-content: "";
-width: 100%;
-height: 10px;
-background-color: #406343;
-position: absolute;
-bottom: -10px;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #406343;
+    position: absolute;
+    bottom: -10px;
+}
+
+/*CONTROLS*/
+.controls {
+    display: flex;
+    gap: 0 35px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.controls_button {
+    background-color: transparent;
+    border: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
 }
