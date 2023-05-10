@@ -177,8 +177,7 @@ img {
 .promo_scroll {
     width: 69px;
     height: 69px;
-    background-image: url("images/bx_mouse.svg");
-    background-color: #3f6142;
+    background-image: url("/images/bx_mouse.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
